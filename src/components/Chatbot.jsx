@@ -63,7 +63,9 @@ const Chatbot = () => {
 
   return (
     <div className={`chatbot-container ${isOpen ? "open" : ""}`}>
-      <button className="chatbot-toggle" onClick={toggleChat}>💬</button>
+      <button className="chatbot-toggle" onClick={toggleChat}>
+        {isOpen ? "❌" : "💬"}
+      </button>
       {isOpen && (
         <div className="chatbot-box">
           <div className="chatbot-messages">
